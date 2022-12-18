@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+:root {
+  --Brightorange: hsl(31, 77%, 52%);
+  --Darkcyan: hsl(184, 100%, 22%);
+  --Verydarkcyan: hsl(179, 100%, 13%);
+
+  --Transparentwhite: hsla(0, 0%, 100%, 0.75); /*(paragraphs)*/
+  --Verylightgray: hsl(0, 0%, 95%); /*(background, headings, buttons)*/
+  --fontBigShoulders: "Big Shoulders Display", cursive; /*400*/
+  --fontLexend: "Lexend Deca", sans-serif; /*700*/
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/*- Mobile: 375px
+- Desktop: 1440px*/
+body {
+  background-color: var(--Verylightgray);
+}
+main {
+  padding: 2rem;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem auto;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  min-width: 320px;
+  max-width: 700px;
+}
+.card__section {
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 0 2rem;
+}
+.card__sedans {
+  background-color: var(--Brightorange);
+}
+.card__suvs {
+  background-color: var(--Darkcyan);
+}
+.card__luxury {
+  background-color: var(--Verydarkcyan);
+}
+.card__model {
+  color: var(--Verylightgray);
+  font-family: var(--fontBigShoulders);
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+p {
+  padding: 0 3rem 0 0;
+  font-weight: 400;
+  font-family: var(--fontLexend);
+  color: var(--Transparentwhite);
+  line-height: 2rem;
+}
+.card__btn {
+  padding: 1rem;
+  border-radius: 2rem;
+  width: 50%;
+  border: 3px solid transparent;
+  font-family: var(--fontLexend);
+  letter-spacing: 2px;
+  transition: background-color 0.5s;
+  margin-bottom: 0.5rem;
+}
+.card__btn:hover {
+  background-color: rgb(177, 225, 254);
+  cursor: pointer;
+}
+.card__btn:hover h2 {
+  transform: translateY(300px);
+}
+.card__btn:active {
+  border: 3px solid lightslategray;
+}
+.btn__sedans {
+  color: var(--Brightorange);
+}
+.btn__suvs {
+  color: var(--Darkcyan);
+}
+.btn__luxury {
+  color: var(--Verydarkcyan);
+}
+
+@media (min-width: 900px) {
+  .card {
+    flex-direction: row;
+    max-width: 1080px;
+  }
+  .card__section {
+    height: 500px;
+  }
+  main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+}
