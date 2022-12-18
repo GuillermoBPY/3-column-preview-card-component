@@ -38,7 +38,7 @@ body {
 }
 .card__section {
   max-width: 350px;
-  height: 400px;
+  height: 500px;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -189,9 +189,6 @@ a:hover {
   .card {
     flex-direction: row;
     max-width: 1080px;
-  }
-  .card__section {
-    height: 500px;
   }
   .container {
     height: 100vh;
