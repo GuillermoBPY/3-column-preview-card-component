@@ -91,7 +91,23 @@ p {
 .btn__luxury {
   color: var(--Verydarkcyan);
 }
+.github{
+  display: flex;
+}
+a{
+  font-family: var(--fontBigShoulders);
+  display: block;
+  height: 50px;
+  text-decoration: none;
+  color: inherit;
+  border: 2px solid transparent;
+  transition: font-size 0.5s, letter-spacing 0.5s;
+}
 
+a:hover{
+  font-size: 1.5rem;
+  letter-spacing: 1rem;
+}
 @media (min-width: 900px) {
   .card {
     flex-direction: row;
@@ -102,6 +118,7 @@ p {
   }
   main {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100vh;
